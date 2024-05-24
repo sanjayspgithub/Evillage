@@ -1,0 +1,219 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>My e-Village</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="https://i.pinimg.com/564x/db/89/73/db8973b57b8d942a8189a293f4932ed3.jpg" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+<link href="{% static "assets/vendor/aos/aos.css" %}" rel="stylesheet">
+<link href="{% static "assets/vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+<link href="{% static "assets/vendor/bootstrap-icons/bootstrap-icons.css" %}" rel="stylesheet">
+<link href="{% static "assets/vendor/boxicons/css/boxicons.min.css" %}" rel="stylesheet">
+<link href="{% static "assets/vendor/glightbox/css/glightbox.min.css" %}" rel="stylesheet">
+<link href="{% static "assets/vendor/swiper/swiper-bundle.min.css" %}" rel="stylesheet">
+
+<!-- Template Main CSS File -->
+<link href="{% static "assets/css/style.css" %}" rel="stylesheet">
+
+</head>
+<body>
+  {% include 'header.html' %}
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="my-5 d-flex align-items-center">
+    
+    <div class="container" data-aos="zoom-out" data-aos-delay="50">
+      <h1>Welcome to <span>Village Portal</span></h1>
+      <h2>E-Village: Connecting rural communities through a digital platform, showcasing development initiatives, sharing information, and accessing donations for community growth.</h2>
+  
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services my-5" data-aos="fade-right">
+      <div class="row">
+        <div class="icon-box">
+          <div class="container p-0">
+            <img src="https://64.media.tumblr.com/44bcc36dd8b9faa8fd0e4697fdc4b3b5/f5b7b94996793ddb-bc/s500x750/df3cd298ff0a941fe88790a6b56f04f7b19b6007.gif" alt="">
+          </div>
+              <div class=" components ">
+              <h4 class="title"><a href="{% url 'about' %}">Project Components</a></h4>
+              <p class="description">The My e-Village project consists of the following key
+                components:
+              <ul class="description">
+                <li>Establish a digital platform that connects rural communities, allowing them to share 
+                  and celebrate their development achievements.
+                </li>
+                <li>
+                  Facilitate communication and knowledge exchange among villagers, promoting 
+                  collaboration and learning from each other's experiences.
+                </li>
+              </ul></p><br>
+                <button class="btn-primary btn"><a href="{% url 'about' %}">learn More</a></button>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section id="featured-services" class="featured-services my-5" data-aos="fade-left">
+      <div class="row">
+        <div class="icon-box">
+          
+              <div class=" components col-lg-6">
+                <h4 class="title my-3"><a href="{% url 'donate' %}">Donate Now</a></h4>
+                <p class="description">Donation to support village development plays a crucial role in uplifting communities and improving their living conditions. By making a donation to a village, you contribute to various aspects such as education, healthcare, infrastructure, clean water supply, and livelihood opportunities. Your donation can help build schools, provide medical supplies, empower local businesses, promote sustainable agriculture, and support community initiatives.</p>
+                <button class="btn-primary btn"><a href="{% url 'donate' %}">Donate Now</a></button>
+              </div>
+              <div class="container p-0">
+                <img src="https://png.pngtree.com/background/20230618/original/pngtree-money-donation-concept-cartoon-style-3d-render-illustration-of-a-hand-picture-image_3755145.jpg" id="donate" alt="">
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section id="featured-services" class="featured-services " data-aos="fade-right">
+      <div class="row">
+        <div class="icon-box">
+          <div class="container p-0">
+            <img src="https://i.pinimg.com/originals/a9/28/9d/a9289d8bcfa921e91c08fc47f284a92b.gif" alt="">
+          </div>
+              <div class=" components col-lg-6">
+                <h4 class="title"><a href="{% url 'school' %}">School Activities</a></h4>
+                <p class="description">Village school activities involve a variety of events and programs aimed at promoting holistic education and engaging the community. These activities may include academic competitions, cultural festivals, sports events, community service projects, educational trips, and extracurricular clubs, all aimed at enhancing students' learning experiences and fostering their overall development.
+                </p>
+                <button class="btn-primary btn"><a href="{% url 'school' %}">Check Now</a></button>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section id="featured-services" class="featured-services my-5" data-aos="fade-left">
+      <div class="row">
+        <div class="icon-box">
+              <div class=" components col-lg-6">
+                <h4 class="title my-3"><a href="{% url 'gram' %}">Gram Panchayat Updates</a></h4>
+                <p class="description "> Gram Panchayat updates provide timely information on infrastructure development, welfare schemes, livelihood and agriculture initiatives, community programs, financial matters, governance, and public grievances. These updates ensure transparency and citizen participation in the functioning of the local government. .</p>
+                <button class="btn-primary btn"><a href="{% url 'gram' %}">Check Now</a></button>
+              </div>
+              <div class="container p-0">
+                <img src="https://64.media.tumblr.com/f5ca6373c5af1430eb08de447987dcb5/62b5cd61614f4213-d0/s540x810/4d3e92a6baf369fa2ea771ecf8372f6ffba62a29.gif" alt="">
+              </div>
+          </div>
+    </section>
+
+    <!-- End Featured Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials my-5">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static "assets/img/testimonials/testimonials-1.jpg" %}" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  E-Village is a digital paradise that will revolutionize your online experience. With its sleek design, user-friendly interface, and cutting-edge features, E-Village takes your virtual journey to new heights. From seamless navigation to a vast array of services, this website has it all. Discover a world of convenience as you shop, connect, and explore with ease. The dedication to customer satisfaction is evident, ensuring a hassle-free and delightful online experience. Join the E-Village community today and unlock the full potential of the digital world!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static "assets/img/testimonials/testimonials-2.jpg" %}"class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  E-village is an exceptional website that has truly transformed my online experience. The user-friendly interface makes navigation a breeze, and the vast array of services they offer is impressive. From shopping for top-notch products to accessing valuable resources, E-village has it all. The website's responsiveness on various devices is commendable, and their customer support is always ready to assist. E-village has undoubtedly become my go-to destination for all things online. Highly recommended for a seamless and enjoyable online journey!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static "assets/img/testimonials/testimonials-3.jpg" %}"class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  e-Village is an exceptional website that truly connects rural communities. It offers a seamless platform for villagers to access essential services, stay informed about local news, and engage with their community. The user-friendly interface and comprehensive features make it a valuable resource for villagers. With e-Village, bridging the digital divide has never been easier. Highly recommended!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static "assets/img/testimonials/testimonials-4.jpg" %}" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  E-Village is a digital paradise that exceeds all expectations. From the moment you enter this virtual realm, you're transported to a world of endless possibilities. The user-friendly interface, stunning visuals, and seamless navigation make exploring the e-village a delightful experience. Whether you're searching for cutting-edge technology, innovative solutions, or simply a place to connect with like-minded individuals, E-Village has it all. With a vast array of resources, expert advice, and a thriving community, E-Village is the ultimate destination for all your digital aspirations. Unleash your potential and join the e-village revolution today!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static "assets/img/testimonials/testimonials-5.jpg" %}" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  e-Village is a remarkable website that takes you on an incredible digital journey. From its sleek design to its user-friendly interface, every aspect of e-Village is crafted to perfection. Explore a vast array of captivating content, ranging from informative articles to engaging multimedia. The seamless navigation ensures a hassle-free experience, allowing you to effortlessly delve into the virtual village. With its exceptional features and captivating offerings, e-Village is a true gem in the online realm. Prepare to be amazed and inspired by the wonders of e-Village!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+  </main><!-- End #main -->
+
+  {% include 'footer.html' %}
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+ <!-- Vendor JS Files -->
+ <script src="{% static "assets/vendor/purecounter/purecounter_vanilla.js" %}"></script>
+ <script src="{% static "assets/vendor/aos/aos.js" %}"></script>
+ <script src="{% static "assets/vendor/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
+ <script src="{% static "assets/vendor/glightbox/js/glightbox.min.js" %}"></script>
+ <script src="{% static "assets/vendor/isotope-layout/isotope.pkgd.min.js" %}"></script>
+ <script src="{% static "assets/vendor/swiper/swiper-bundle.min.js" %}"></script>
+ <script src="{% static "assets/vendor/waypoints/noframework.waypoints.js" %}"></script>
+ <script src="{% static "assets/vendor/php-email-form/validate.js" %}"></script>
+
+ <!-- Template Main JS File -->
+ <script src="{% static "assets/js/main.js" %}"></script>
+
+</body>
+
+</html>
